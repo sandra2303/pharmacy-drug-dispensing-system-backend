@@ -1,0 +1,847 @@
+{
+  "info": {
+    "_postman_id": "badd73ed-09c0-406e-81aa-971bfb5a155b",
+    "name": "pharmacy-drug-despensing-system-midterm",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58599331",
+    "_collection_link": "https://go.postman.co/collection/58599331-badd73ed-09c0-406e-81aa-971bfb5a155b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Seed data",
+      "item": [
+        {
+          "name": "part A",
+          "item": [
+            {
+              "name": "A1",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/drug-classes/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "drug-classes",
+                    "all"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A2",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "part B",
+          "item": [
+            {
+              "name": "B1",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/customers/by-last-name?lastName=mukamana",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "customers",
+                    "by-last-name"
+                  ],
+                  "query": [
+                    {
+                      "key": "lastName",
+                      "value": "mukamana"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "B2",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/drug-orders/by-status?status=RECEIVED",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "drug-orders",
+                    "by-status"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "RECEIVED"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "B3",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/drug-orders/between?start=2026-10-01&end=2026-10-31",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "drug-orders",
+                    "between"
+                  ],
+                  "query": [
+                    {
+                      "key": "start",
+                      "value": "2026-10-01"
+                    },
+                    {
+                      "key": "end",
+                      "value": "2026-10-31"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "part C",
+          "item": [
+            {
+              "name": "C1",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/pharmacists/by-drug-class?name=anti",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "pharmacists",
+                    "by-drug-class"
+                  ],
+                  "query": [
+                    {
+                      "key": "name",
+                      "value": "anti"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "C2",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/counters/free",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "counters",
+                    "free"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "C3",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/drug-classes/unused",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "drug-classes",
+                    "unused"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "C4",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/customers/of-pharmacist/a9435ae1-0f4d-40d7-9376-1d179e47f927",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "customers",
+                    "of-pharmacist",
+                    "a9435ae1-0f4d-40d7-9376-1d179e47f927"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "part D",
+          "item": [
+            {
+              "name": "D1",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"orderDate\": \"2026-12-15\",\r\n  \"status\": \"DISPENSED\",\r\n  \"prescribingDoctor\": \"Dr. Test\",\r\n  \"customer\": {\"id\": \"bbb6f9df-3dbe-4d6a-ae22-a49572b461b1\"},\r\n  \"pharmacist\": {\"id\": \"9d659d8a-dd74-4248-8d66-b571a0fd1602\"}\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/drug-orders/save",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "drug-orders",
+                    "save"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "D2",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/drug-orders/5c2ba0e7-fa1a-4cca-be37-4be2c85fa5e0/status?status=REJECTED",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "drug-orders",
+                    "5c2ba0e7-fa1a-4cca-be37-4be2c85fa5e0",
+                    "status"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "REJECTED"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "D3",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/pharmacists/9b17a5ce-5f07-4d81-bcad-9ff18a5eb06b/drug-classes/7ffee02c-bb8d-41e9-b5e4-d102d7bd518c",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "pharmacists",
+                    "9b17a5ce-5f07-4d81-bcad-9ff18a5eb06b",
+                    "drug-classes",
+                    "7ffee02c-bb8d-41e9-b5e4-d102d7bd518c"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "D4",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/pharmacists/a9435ae1-0f4d-40d7-9376-1d179e47f927/counter?counterNumber=4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "pharmacists",
+                    "a9435ae1-0f4d-40d7-9376-1d179e47f927",
+                    "counter"
+                  ],
+                  "query": [
+                    {
+                      "key": "counterNumber",
+                      "value": "4"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "part E",
+          "item": [
+            {
+              "name": "E1",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"drugName\": \"Amoxicillin 500mg\", \"instructions\": \"One capsule three times a day after meals\", \"quantity\": 21}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/dispensed-items/save?drugOrderId=f17b9ec5-c65b-47bb-8149-10c3da7af5c8",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "dispensed-items",
+                    "save"
+                  ],
+                  "query": [
+                    {
+                      "key": "drugOrderId",
+                      "value": "f17b9ec5-c65b-47bb-8149-10c3da7af5c8"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "E2",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/dispensed-items/customer/CUS-00325",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "dispensed-items",
+                    "customer",
+                    "CUS-00325"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "E3",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/drug-orders/delete/f17b9ec5-c65b-47bb-8149-10c3da7af5c8",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "drug-orders",
+                    "delete",
+                    "f17b9ec5-c65b-47bb-8149-10c3da7af5c8"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "part F",
+          "item": [
+            {
+              "name": "F1",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "F2",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/drug-orders/cancel-day?pharmacistId=9d659d8a-dd74-4248-8d66-b571a0fd1602&date=2026-12-20",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "drug-orders",
+                    "cancel-day"
+                  ],
+                  "query": [
+                    {
+                      "key": "pharmacistId",
+                      "value": "9d659d8a-dd74-4248-8d66-b571a0fd1602"
+                    },
+                    {
+                      "key": "date",
+                      "value": "2026-12-20"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Bonus",
+          "item": [
+            {
+              "name": "bonus dashoard",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/dashboard/summary",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "dashboard",
+                    "summary"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "bonus page",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "check drug classes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/drug-classes/all",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "drug-classes",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "save drug class",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Vaccines\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/drug-classes/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "drug-classes",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "save counter",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"counterNumber\": 4, \"name\": \"Counter 4\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/counters/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "counters",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "check counters",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/counters/all",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "counters",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete counter",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/counters/delete/c984eb4c-abd7-47ed-82bc-0960698fc37f",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "counters",
+                "delete",
+                "c984eb4c-abd7-47ed-82bc-0960698fc37f"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "save pharmacist",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"Eric\",\r\n  \"lastName\": \"Habimana\",\r\n  \"licenseNumber\": \"LIC-002\",\r\n  \"counter\": {\"id\": \"329877fe-5463-4af3-8427-7b286743db85\"},\r\n  \"drugClasses\": [\r\n    {\"id\": \"PASTE-ANTIMALARIALS-ID\"}\r\n  ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/pharmacists/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "pharmacists",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "check pharmacists",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/pharmacists/all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "pharmacists",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "save customer",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"firstName\": \"Diane\", \"lastName\": \"Uwera\", \"customerNumber\": \"CUS-00325\", \"insuranceNumber\": \"INS-1005\", \"phone\": \"0788000005\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/customers/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "customers",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "check customers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/customers/all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "customers",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "save drug order",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"orderDate\": \"2026-10-25\",\r\n  \"status\": \"RECEIVED\",\r\n  \"prescribingDoctor\": \"Dr. Kamanzi\",\r\n  \"customer\": {\"id\": \"8540e177-a1ab-4f88-a135-ec44bd48e94b\"},\r\n  \"pharmacist\": {\"id\": \"9d659d8a-dd74-4248-8d66-b571a0fd1602\"}\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/drug-orders/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "drug-orders",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "check drug orders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/drug-orders/all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "drug-orders",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update drug",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Test updated\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/drug-classes/update/72d54c26-ebcf-4690-80d8-86bf09812995",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "drug-classes",
+                "update",
+                "72d54c26-ebcf-4690-80d8-86bf09812995"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete drug",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/drug-classes/delete/72d54c26-ebcf-4690-80d8-86bf09812995",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "drug-classes",
+                "delete",
+                "72d54c26-ebcf-4690-80d8-86bf09812995"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
